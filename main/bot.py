@@ -46,8 +46,6 @@ async def is_enabled():
                     pass
                 elif 'мин' not in date_wr:
                     break
-                elif 'минуту' in date_wr:
-                    pass
                 elif int(date_list[0]) > 10:
                     break
                 price_usd = soup.find('div', class_='listing-item__priceusd').text
