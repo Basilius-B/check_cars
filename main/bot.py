@@ -54,7 +54,7 @@ async def is_enabled():
                 link = 'цена -> ' + price_usd + \
                        '\nhttps://cars.av.by' + soup.find('a', class_='listing-item__link').get('href')
                 await bot.send_message(chat_id='-695378182', text=link)
-        time.sleep(60 * 10)
+        time.sleep(60 * 10.5)
 
 
 if __name__ == '__main__':
