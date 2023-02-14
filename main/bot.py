@@ -11,7 +11,6 @@ project_folder = os.path.expanduser('~\check_cars')
 load_dotenv('.env')
 
 BOT_TOKEN = os.getenv('BOT_TOKEN')
-print(BOT_TOKEN)
 urls = [
     'https://cars.av.by/filter?brands[0][brand]=6&year[min]=2000&price_usd[min]=4000&price_usd[max]=12000&engine_capacity[min]=1900&engine_capacity[max]=2700&transmission_type=2&engine_type[0]=5&engine_type[1]=1&place_region[0]=1003&place_region[1]=1006&place_region[2]=1005&sort=4'
 ]
