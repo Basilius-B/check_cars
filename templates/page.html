@@ -1,0 +1,21 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+<!--        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet">-->
+<!--        <link rel="stylesheet" href="./style.css">-->
+    </head>
+
+
+<body>
+    <div class="container">
+            <div class="col-lg-8  offset-lg-2">
+                The FPS is <div hx-get="/fps" hx-trigger="every 1s"></div>
+                <h3 class="mt-5">Live Streaming</h3>
+                <div hx-get="/get_data" hx-trigger="every 10s"></div>
+            </div>
+    </div>
+</body>
+
+</html>
