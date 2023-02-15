@@ -21,12 +21,18 @@ def fps():
     the_answer = random.randint(25, 60)
     return (str(the_answer))
 
+@app.route('/last_log')
+def new_log():
+    with open('log.txt','r') as f:
+        return f.read()
 
 @app.route('/get_data')
 def index():
     print('get_data')
     start_time = time.gmtime()
     check_new(urls, bot)
+    with open('log.txt','w') as f:
+        f.write('TIME - '+time.strftime("%Y-%m-%d %H:%M:%S", start_time))
     return 'TIME - '+time.strftime("%Y-%m-%d %H:%M:%S", start_time)
 
 

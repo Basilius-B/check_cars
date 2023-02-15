@@ -13,7 +13,8 @@
             <div class="col-lg-8  offset-lg-2">
                 The FPS is <div hx-get="/fps" hx-trigger="every 1s"></div>
                 <h3 class="mt-5">Live Streaming</h3>
-                <div hx-get="/get_data" hx-trigger="every 300s"></div>
+                Last_time <div hx-get="/last_log" hx-trigger="every 1s"></div>
+                <div hx-get="/get_data" hx-trigger="every 10s"></div>
             </div>
     </div>
 </body>
