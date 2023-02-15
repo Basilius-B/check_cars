@@ -4,11 +4,10 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import telebot
-import asyncio
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-project_folder = os.path.expanduser('~\check_cars')
-load_dotenv('.env')
+# project_folder = os.path.expanduser('~\check_cars')
+# load_dotenv('.env')
 
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 urls = [
